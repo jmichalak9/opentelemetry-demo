@@ -5,7 +5,7 @@ metadata:
   name: shippingservice
   description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
   annotations:
-    backstage.io/techdocs-ref: url:https://raw.githubusercontent.com/open-telemetry/opentelemetry.io/main/content/en/docs/demo/services/shipping.md
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
 spec:
   type: service
   lifecycle: production
