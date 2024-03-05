@@ -3,9 +3,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: loadgenerator
-  description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
+  description: The load generator is based on the Python load testing framework Locust. By default it will simulate users requesting several different routes from the frontend.
   annotations:
-    backstage.io/techdocs-ref: url:https://opentelemetry.io/docs/demo/services/loadgenerator/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
   lifecycle: production

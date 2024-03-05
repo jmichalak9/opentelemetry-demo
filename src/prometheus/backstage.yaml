@@ -3,9 +3,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: prometheus
-  description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
+  description: All generated metrics and exemplars are scraped by Prometheus.
   annotations:
-    backstage.io/techdocs-ref: url:https://opentelemetry.io/docs/demo/services/prometheus/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
   lifecycle: production

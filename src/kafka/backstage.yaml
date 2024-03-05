@@ -3,9 +3,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: kafka
-  description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
+  description: This is used as a message queue service to connect the checkout service with the accounting and fraud detection services.
   annotations:
-    backstage.io/techdocs-ref: url:https://opentelemetry.io/docs/demo/services/kafka/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: database
   lifecycle: production

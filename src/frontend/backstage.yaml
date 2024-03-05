@@ -3,9 +3,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: frontend
-  description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
+  description: The frontend is responsible to provide a UI for users, as well as an API leveraged by the UI or other clients. The application is based on Next.JS to provide a React web-based UI and API routes.
   annotations:
-    backstage.io/techdocs-ref: url:https://opentelemetry.io/docs/demo/services/frontend/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
   lifecycle: production

@@ -3,9 +3,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: emailservice
-  description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
+  description: This service will send a confirmation email to the user when an order is placed.
   annotations:
-    backstage.io/techdocs-ref: url:https://opentelemetry.io/docs/demo/services/emailservice/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
   lifecycle: production

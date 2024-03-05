@@ -3,9 +3,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cartservice
-  description: This service is responsible to process a checkout order from the user. The checkout service will call many other services in order to process an order.
+  description: This service maintains items placed in the shopping cart by users. It interacts with a Redis caching service for fast access to shopping cart data.
   annotations:
-    backstage.io/techdocs-ref: url:https://opentelemetry.io/docs/demo/services/cartservice/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
   lifecycle: production
