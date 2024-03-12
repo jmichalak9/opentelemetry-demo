@@ -30,4 +30,3 @@ spec:
     - ./src/quoteservice/backstage.yaml
     - ./src/recommendationservice/backstage.yaml
     - ./src/shippingservice/backstage.yaml
-    - https://github.com/jmichalak9/opentelemetry.io/blob/main/catalog-info.yaml
