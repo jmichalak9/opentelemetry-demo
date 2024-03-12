@@ -5,7 +5,7 @@ metadata:
   name: featureflagservice
   description: This service is written in Erlang/Elixir and it is responsible for creating, reading, updating and deleting feature flags in a PostgreSQL DB. It is called by Product Catalog and Shipping services.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/featureflag
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service

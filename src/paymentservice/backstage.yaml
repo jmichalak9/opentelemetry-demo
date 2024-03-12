@@ -5,7 +5,7 @@ metadata:
   name: paymentservice
   description: This service is responsible to process credit card payments for orders. It will return an error if the credit card is invalid or the payment can not be processed.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/payment
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service

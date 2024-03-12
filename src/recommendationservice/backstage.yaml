@@ -5,7 +5,7 @@ metadata:
   name: recommendationservice
   description: This service is responsible to get a list of recommended products for the user based on existing product IDs the user is browsing.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/recommendation
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service

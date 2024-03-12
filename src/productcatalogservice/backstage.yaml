@@ -5,7 +5,7 @@ metadata:
   name: productcatalogservice
   description: This service is responsible to return information about products. The service can be used to get all products, search for specific products, or return details about any single product.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/productcatalog
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service

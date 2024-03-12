@@ -5,7 +5,7 @@ metadata:
   name: quoteservice
   description: This service is responsible for calculating shipping costs, based on the number of items to be shipped. The quote service is called from Shipping Service via HTTP.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/quote
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service

@@ -5,7 +5,7 @@ metadata:
   name: kafka
   description: This is used as a message queue service to connect the checkout service with the accounting and fraud detection services.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/kafka
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: database

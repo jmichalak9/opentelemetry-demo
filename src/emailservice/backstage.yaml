@@ -5,7 +5,7 @@ metadata:
   name: emailservice
   description: This service will send a confirmation email to the user when an order is placed.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/email
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
