@@ -36,8 +36,7 @@ import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/
 
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
 import { SignInProviderConfig, SignInPage } from '@backstage/core-components';
-
-import { Mermaid } from 'backstage-plugin-techdocs-addon-mermaid';
+import { LighthousePage } from '@backstage/plugin-lighthouse';
 
 const githubProvider: SignInProviderConfig = {
   id: 'github-auth-provider',
@@ -93,7 +92,6 @@ const routes = (
     >
       <TechDocsAddons>
         <ReportIssue />
-        <Mermaid config={{ theme: 'forest', themeVariables: { lineColor: '#000000' } }} />
       </TechDocsAddons>
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />
@@ -115,6 +113,7 @@ const routes = (
     </Route>
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
+    <Route path="/lighthouse" element={<LighthousePage />} />
   </FlatRoutes>
 );
 

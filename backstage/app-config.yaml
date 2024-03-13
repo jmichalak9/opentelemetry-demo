@@ -19,6 +19,8 @@ backend:
     # host: 127.0.0.1
   csp:
     connect-src: ["'self'", 'http:', 'https:']
+    frame-src:
+      - http://localhost:4008
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
     # Default Helmet Content-Security-Policy values can be removed by setting the key to false
   cors:
@@ -105,3 +107,5 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+lighthouse:
+  baseUrl: http://localhost:4008

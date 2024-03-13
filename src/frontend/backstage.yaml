@@ -7,6 +7,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/frontend
     github.com/project-slug: jmichalak9/opentelemetry-demo
+    lighthouse.com/website-url: http://host.docker.internal:8080
 spec:
   type: service
   lifecycle: production

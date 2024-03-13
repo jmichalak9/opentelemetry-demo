@@ -1,0 +1,24 @@
+# docker-compose.yml
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: example
+  
+  lighthouse:
+    image: spotify/lighthouse-audit-service:latest
+    environment:
+      PGHOST: db
+      PGUSER: dbuser
+      PGPASSWORD: example
+      LAS_PORT: 4008
+      LAS_CORS: "true"
+    ports:
+      - "4008:4008"
+    extra_hosts:
+    - "host.docker.internal:host-gateway"

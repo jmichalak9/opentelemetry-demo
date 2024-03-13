@@ -73,8 +73,11 @@ import {
 } from '@adityasinghal26/plugin-github-codespaces';
 
 import { EntityGithubInsightsContent } from '@roadiehq/backstage-plugin-github-insights';
-
-import { Mermaid } from 'backstage-plugin-techdocs-addon-mermaid';
+import {
+  EntityLighthouseContent,
+  EntityLastLighthouseAuditCard,
+  isLighthouseAvailable,
+} from '@backstage/plugin-lighthouse';
 
 const codespacesContent = (
   <>
@@ -103,7 +106,6 @@ const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
       <ReportIssue />
-      <Mermaid config={{ theme: 'forest', themeVariables: { lineColor: '#000000' } }} />
     </TechDocsAddons>
   </EntityTechdocsContent>
 );
@@ -212,6 +214,13 @@ const overviewContent = (
         </Grid>
       </EntitySwitch.Case>
     </EntitySwitch>
+    <EntitySwitch>
+      <EntitySwitch.Case if={isLighthouseAvailable}>
+        <Grid item md={6}>
+          <EntityLastLighthouseAuditCard />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
   </Grid>
 );
 
@@ -295,6 +304,9 @@ const websiteEntityPage = (
 
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
+    </EntityLayout.Route>
+    <EntityLayout.Route path="/lighthouse" title="Lighthouse">
+      <EntityLighthouseContent />
     </EntityLayout.Route>
   </EntityLayout>
 );

@@ -3,9 +3,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: adservice
-  description: TXhis service determines appropriate ads to serve to users based on context keys. The ads will be for products available in the store.
+  description: This service determines appropriate ads to serve to users based on context keys. The ads will be for products available in the store.
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/adtree/main/content/en/docs/demo/services/adservice
+    backstage.io/techdocs-ref: url:https://github.com/jmichalak9/opentelemetry.io/tree/main/content/en/docs/demo/services/ad
     github.com/project-slug: jmichalak9/opentelemetry-demo
 spec:
   type: service
