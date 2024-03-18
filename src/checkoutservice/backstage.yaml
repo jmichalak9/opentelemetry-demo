@@ -20,3 +20,4 @@ spec:
     - component:default/productcatalogservice
     - component:default/shippingservice
     - resource:default/kafka
+  consumesApis: [pb]

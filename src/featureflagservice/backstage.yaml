@@ -14,4 +14,3 @@ spec:
   system: opentelemetry-demo
   dependsOn:
     - resource:default/ffspostgres
-  providesApis: [pb]

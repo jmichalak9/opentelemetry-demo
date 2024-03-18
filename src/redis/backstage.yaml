@@ -1,0 +1,13 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: redis
+  description: This is used as a system cache.
+  annotations:
+    github.com/project-slug: jmichalak9/opentelemetry-demo
+spec:
+  type: database
+  lifecycle: production
+  owner: user:guest
+  system: opentelemetry-demo

@@ -14,3 +14,5 @@ spec:
   system: opentelemetry-demo
   dependsOn:
     - component:default/featureflagservice
+    - resource:default/redis
+  providesApis: [pb]

@@ -29,4 +29,5 @@ spec:
     - ./src/prometheus/backstage.yaml
     - ./src/quoteservice/backstage.yaml
     - ./src/recommendationservice/backstage.yaml
+    - ./src/redis/backstage.yaml
     - ./src/shippingservice/backstage.yaml
